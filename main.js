@@ -7,17 +7,13 @@ const { spawn } = require("child_process");
 const readline = require("readline");
 
 const banner = `\x1b[33m
-███████╗ █████╗ ██╗   ██╗ █████╗ ███╗   ██╗
-██╔════╝██╔══██╗██║   ██║██╔══██╗████╗  ██║
-███████╗███████║██║   ██║███████║██╔██╗ ██║
-╚════██║██╔══██║╚██╗ ██╔╝██╔══██║██║╚██╗██║
-███████║██║  ██║ ╚████╔╝ ██║  ██║██║ ╚████║
-╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝
+
+✨ ꓨЄɴ-Ż(尺Їᴅ山Ⱥɴ) ✨
                                                                                                   
-    Auto Claim Bot For Major - @savanop
-    Author  : Airdop script  : Thanks to @savan
-    Github  : https://github.com/Savanop121
-    Telegram: https://t.me/savanop121
+    Auto Claim Bot For Major - @hackathonstar
+    Author  : Airdop script  : Thanks to @Md Ridwan
+    Github  : https://github.com/mdridwan01
+    Telegram: https://t.me/hackathonstar
 \x1b[0m`;
 
 class Major {
@@ -348,10 +344,10 @@ class Major {
 
   async processAccount(init_data, accountIndex) {
     const authResult = await this.authenticate(init_data);
-    console.log(authResult);
+
     if (!authResult || !authResult.access_token || !authResult.user) {
       const ridw = JSON.stringify(authResult);
-      console.log(ridw);
+
       this.log(
         `Unable  Ridwabto authenticate account ${
           accountIndex + 1
